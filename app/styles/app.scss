@@ -1,0 +1,73 @@
+$colormind-white: #F9FAFB;
+$colormind-blue: #829FB9;
+$colormind-yellow: #EDD179;
+$colormind-red: #AB555D;
+$colormind-purple: #34376F;
+
+$dark: $colormind-red;
+$body-bg: $colormind-white;
+$body-color: $colormind-purple;
+
+@import "ember-bootstrap/bootstrap";
+// Required
+@import "ember-bootstrap/functions";
+@import "ember-bootstrap/variables";
+@import "ember-bootstrap/mixins";
+
+// Optional - Bootstrapping/Resetting
+@import "ember-bootstrap/root";
+@import "ember-bootstrap/print";
+@import "ember-bootstrap/reboot";
+
+// Optional - Everything else
+@import "ember-bootstrap/type";
+@import "ember-bootstrap/buttons";
+
+body {
+    font-family: Sans-serif;
+}
+
+.btn-secondary {
+    background-color: $colormind-blue;
+    border-color: $colormind-blue;
+}
+
+.distortions {
+    display: flex;
+    margin: 1rem;
+}
+
+.distortions > div {
+    flex-direction: row;
+}
+
+.distortionInfo {
+    margin: 1rem;
+}
+
+// .distortion-item {
+//     flex-direction: column;
+//     justify-content: center;
+//     background-color: $colormind-purple;
+//     color: $colormind-white;
+//     border-radius: 1rem;
+//     text-align: center;
+//     margin: 1rem;
+//     padding: 1rem;
+//     box-shadow: .3rem .3rem 1rem gray;
+// }
+
+.page-header {
+    text-align: center;
+    margin: 2rem;
+}
+
+.distortions-bar {
+    width: 10rem;
+    border-right: 1rem gray;
+}
+
+.thoughtRecord {
+    margin: 1rem;
+    display: flex;
+}

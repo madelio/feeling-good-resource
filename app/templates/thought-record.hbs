@@ -1,0 +1,9 @@
+<div class='thoughtRecord'>
+{{#bs-form formLayout=formLayout model=this as |form|}}
+    <h4>Situation</h4>
+  Briefly describe the actual event leading to the unpleasant emotion.
+  {{form.element controlType="textarea" required=true}}
+  {{#bs-button onClick=(action 'addEmotion')}}+ Add Emotion {{/bs-button}}
+  {{#bs-button}}+ Add Automatic Thoughts{{/bs-button}}
+{{/bs-form}}
+</div>
