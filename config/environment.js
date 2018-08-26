@@ -53,7 +53,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'hash';
-    ENV.rootURL = '/feeling-good-site';
+    ENV.rootURL = '/feeling-good-resource';
     // here you can enable a production-specific feature
   }
 
