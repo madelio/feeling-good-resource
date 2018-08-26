@@ -1,0 +1,21 @@
+{{#bs-navbar backgroundColor='dark' 
+as |navbar| }}
+              <div class="navbar-header">
+                {{navbar.toggle}}
+                <a class="navbar-brand" href="#">Feeling Good Resources</a>
+              </div>
+              {{#navbar.content}}
+                {{#navbar.nav as |nav|}}
+                  {{#nav.item}}
+                    {{#nav.link-to "self-esteem"}}Self Esteem{{/nav.link-to}}
+                  {{/nav.item}}
+                  {{#nav.item}}
+                    {{#nav.link-to "cognitive-distortions"}}Cognitive Distortions{{/nav.link-to}}
+                  {{/nav.item}}
+                  {{#nav.item}}
+                    {{#nav.link-to "thought-record"}}Thought Record{{/nav.link-to}}
+                  {{/nav.item}}
+                {{/navbar.nav}}
+              {{/navbar.content}}
+            {{/bs-navbar}}
+{{outlet}}

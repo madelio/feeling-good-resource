@@ -1,0 +1,22 @@
+<div class='page-header'>
+    <h1 class="display-4">Cognitive Distortions
+    </h1>
+    <p>Simply ways that our mind convinces us of something that isn't really true. These inaccurate thoughts are usually used to reinforce negative thinking or emotions — telling ourselves things that sound rational and accurate, but really only serve to keep us feeling bad about ourselves.</p>
+</div>
+
+<div class='distortions'>
+    <div class='distortionList'>
+    {{#bs-button-group value=clickedDistortion
+                       vertical=true
+                       type="radio" 
+                       onChange=(action 'selectDistortion') as |bg|}}
+        {{#each model as |distortion|}}
+            {{#bg.button value=distortion}}
+                {{distortion.title}}
+            {{/bg.button}}
+        {{/each}}
+    {{/bs-button-group}}
+    </div>
+
+{{distortion-info distortion=selectedDistortion}}
+</div>
